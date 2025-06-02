@@ -1,11 +1,11 @@
-function largestNum(arr) {
-  let largest = arr[0];
+function smallest(arr) {
+  let smallest = Infinity;
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > largest) {
-      largest = arr[i];
+    if (arr[i] < smallest) {
+      smallest = arr[i];
     }
   }
-  return largest;
+  return smallest;
 }
-console.log(largestNum([12, 13, 100, 45, 67]));
+console.log(smallest([12, 13, 100, 45, 67]));

@@ -46,4 +46,36 @@ const objectName = {
   key2: value2,
   // more key-value pairs
 };
+```
 
+JavaScript Program to Find Lagest Number in An Array:
+
+```javascript
+function largestNum(arr) {
+  let largest = arr[0];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
+    }
+  }
+  return largest;
+}
+console.log(largestNum([12, 13, 100, 45, 67]));
+```
+
+javascript Program to find smallest Number in An array:
+
+```javascript
+function smallest(arr){
+  let smallest = Infinity
+  
+  for(let i=0;i<arr.length;i++){
+    if(arr[i]<smallest ){
+      smallest = arr[i]
+    }
+  }
+  return smallest
+}
+console.log(smallest([12,13,100,45,67]))
+```
