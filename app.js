@@ -1,3 +1,5 @@
+//Program to Find Smallest Number in an Array
+
 function smallest(arr) {
   let smallest = Infinity;
 
@@ -40,6 +42,10 @@ for (let i = 0; i < n; i++) {
 
 /* Palidrome or not*/
 function isPalindrome(num) {
+  if (num < 0) {
+    return false;
+  }
+
   let oriNum = num;
   let rev = 0;
 
@@ -54,3 +60,19 @@ function isPalindrome(num) {
   return rev === oriNum;
 }
 console.log(isPalindrome(121));
+
+// Program to reverse an Integer
+
+function revInt(num) {
+  numCopy = num;
+  n = Math.abs(num);
+  let rev = 0;
+  while (n > 0) {
+    let rem = n % 10;
+    rev = rev * 10 + rem;
+    n = Math.floor(n / 10);
+  }
+
+  return numCopy < 0 ? -rev : rev;
+}
+console.log(revInt(-12345));
