@@ -79,3 +79,33 @@ function smallest(arr){
 }
 console.log(smallest([12,13,100,45,67]))
 ```
+
+### Math.floor()
+Use: Rounds a number down to the nearest integer.
+```javascript
+console.log(Math.floor(4.9));  // Output: 4
+console.log(Math.floor(-4.9)); // Output: -5
+```
+
+### Math.ceil()
+Use: Rounds a number up to the nearest integer.
+```javascript
+console.log(Math.ceil(4.1));   // Output: 5
+console.log(Math.ceil(-4.1));  // Output: -4
+```
+
+Math.round()
+Use: Rounds a number to the nearest integer.
+```javascript
+console.log(Math.round(4.4));  // Output: 4
+console.log(Math.round(4.5));  // Output: 5
+console.log(Math.round(-4.5)); // Output: -4
+```
+
+### Math.abs()
+Use: Returns the absolute value (always positive).
+```javascript
+console.log(Math.abs(-7));     // Output: 7
+console.log(Math.abs(7));      // Output: 7
+console.log(Math.abs(-3.14));  // Output: 3.14
+```
