@@ -109,3 +109,32 @@ console.log(Math.abs(-7));     // Output: 7
 console.log(Math.abs(7));      // Output: 7
 console.log(Math.abs(-3.14));  // Output: 3.14
 ```
+## Time and Space Complexity :
+Time Complexity is used to measure the efficiency of the algorithm in terms of speed as the input size grows.
+![Time Complexity Definition](./image.png)
+Time complexity does not mean that time it takes to run the algorithm as time it takes to run the algorithm might depend upon your hardware
+and sofware and it could different for different systems.
+![Efficieny of Linear and Binary Search](./image-1.png)
+
+As we can clearly see from Below Graph as Number of Elements (n) or Input Size increases the Number of Operations (x) also Increases in
+ __Linear Search__.
+![Linear Search and Binary Search Graph](./image-2.png)
+
+But in Case of __Binary-Search(Red Line)__ that is not the case. So the efficiency becomes (n/2^x) where x is the number of operations.
+
+To Re-present **Time complexities** we use something known as __Big-O (O) Notation__ which measures the Time Complexities in __Worst Case__.
+![Big-O Notation](./image-3.png)
+
+### What is Notation :
+Notation is a Symbol to represent Something. So here Big-O (O) is also a symbol to represent Worst Case Time complexity.
+![Notation](./image-4.png)
+
+So in image we can see the Big-O represenation of Linear and Binary Search.
+
+![(O(n^2) complexity)](./image-5.png)
+
+As in above Image when an inner Loop runs similar to outer loop then Time complexity becomes O(n^2) times.
+
+![n log n Time Complexity](./image-6.png)
+
+So Suppose we have a outer loop like in Above Image and inside that we have an operation like Binary Search Then Time complexity becomes __n log n__ times.
