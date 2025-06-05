@@ -138,3 +138,28 @@ As in above Image when an inner Loop runs similar to outer loop then Time comple
 ![n log n Time Complexity](./image-6.png)
 
 So Suppose we have a outer loop like in Above Image and inside that we have an operation like Binary Search Then Time complexity becomes __n log n__ times.
+
+![Some other Time Complexities](./image-7.png)
+
+Below are the Time Complexities that we see most often in our Code.
+![Most Used Time Complexities](./image-8.png)
+
+- Constant Time Complexity _O(1)_ is the time complexity which takes just One Operation to Complete.
+for eg: If we have an array of size n and we want the element at index 5 so it would take just one operation to complete as we can go to particular position of Array Very Quickly.
+arr[5];
+![O(1) Time complexity](./image-9.png)
+
+Let's Plot a Graph of all the time complexities in below manner where __n__ is the number of input and and __x__ is the Time complexity.
+![Different Time Complexities Graph](./image-10.png)
+
+As shown in above image as n increases the Time complexity also Increases for different algorithms.
+
+Efficiency of Different Time Complexities :
+![Efficiency](./image-11.png)
+
+## Space Complexity :
+Space complexity refers to the amount of memory or space an algorithm uses as a function of the size of the input.
+
+When we have a time complexities which are higher and along with that we have time complexities that are lower we ignore the time comlexities 
+that are  lower.
+![Ignoring Smaller Time Complexities](./image-12.png)
