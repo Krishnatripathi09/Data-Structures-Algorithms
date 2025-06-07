@@ -79,16 +79,36 @@
 
 //Progran to Remove Duplicates from an Array :
 
-function removeDuplicates(arr) {
-  let x = 0;
+// function removeDuplicates(arr) {
+//   let x = 0;
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[x] > arr[i]) {
-      x = x + 1;
-      arr[x] = arr[i];
-    }
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > arr[x]) {
+//       x = x + 1;
+//       arr[x] = arr[i];
+//     }
+//   }
+//   return x + 1;
+// }
+
+// console.log(removeDuplicates([0, 0, 1, 1, 2, 2, 3, 3, 3, 4]));
+
+//Program to reverse an Array :
+
+function revArray(s) {
+  let i = 0;
+  let j = s.length - 1;
+
+  while (i < j) {
+    let temp = s[i];
+    s[i] = s[j];
+    s[j] = temp;
+
+    i++;
+    j--;
   }
-  return x + 1;
+
+  return s;
 }
 
-console.log(removeDuplicates([0, 0, 1, 1, 2, 2, 3, 3, 3, 4]));
+console.log(revArray(["k", "r", "i", "s"]));
