@@ -112,3 +112,15 @@ function revArray(s) {
 }
 
 console.log(revArray(["k", "r", "i", "s"]));
+
+// function to Remove Elements from An Array:
+var removeElement = function (nums, val) {
+  let x = 0;
+  for (let i = 0; i <= nums.length - 1; i++) {
+    if (nums[i] != val) {
+      nums[x] = nums[i];
+      x = x + 1;
+    }
+  }
+  return x;
+};
