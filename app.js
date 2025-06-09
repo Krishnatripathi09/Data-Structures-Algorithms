@@ -124,3 +124,15 @@ var removeElement = function (nums, val) {
   }
   return x;
 };
+
+// Recursion : Program to print numbers from n to 1
+
+function printN(num) {
+  let n = num;
+
+  if (n == 0) return;
+  console.log(n);
+  n = n - 1;
+  printN(n);
+}
+printN(10);
