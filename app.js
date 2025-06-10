@@ -136,3 +136,12 @@ function printN(num) {
   printN(n);
 }
 printN(10);
+
+//Sum of first N Numbers using Recursion
+
+function sum(s){
+    if(s==0) return 0;
+    
+    return s+sum(s-1)
+}
+console.log(sum(5))
