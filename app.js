@@ -169,3 +169,13 @@ function fact(num){
    return num * fact(num-1)
 }
 console.log(fact(5))
+
+// FiboNacci Series using Recursion
+
+function fiboNacci(num){
+    if(num<=1) return num;
+
+    let fibo = fiboNacci(num-1)+fiboNacci(num-2)
+    return fibo;
+}
+console.log(fiboNacci(8))
