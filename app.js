@@ -144,4 +144,28 @@ function sum(s){
     
     return s+sum(s-1)
 }
-console.log(sum(5))
+console.log(sum(3))
+
+//sum of all elements in an Array using Recursion
+
+let arr1 = [1,2,3,4,5]
+
+// Sum of all elements in An Array
+function sumArr(n){
+    if(n==0) return arr1[0]
+
+    return arr1[n]+sumArr(n-1)
+}
+console.log(sumArr(arr1.length-1))
+
+
+// Factorial of a Number :
+
+function fact(num){
+    if(num==1){
+        return 1;
+    }
+
+   return num * fact(num-1)
+}
+console.log(fact(5))
