@@ -175,7 +175,10 @@ console.log(fact(5))
 function fiboNacci(num){
     if(num<=1) return num;
 
+
+
     let fibo = fiboNacci(num-1)+fiboNacci(num-2)
+
     return fibo;
 }
-console.log(fiboNacci(8))
+console.log(fiboNacci(5))
