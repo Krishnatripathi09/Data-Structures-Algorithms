@@ -139,46 +139,72 @@ printN(10);
 
 //Sum of first N Numbers using Recursion
 
-function sum(s){
-    if(s==0) return 0;
-    
-    return s+sum(s-1)
+function sum(s) {
+  if (s == 0) return 0;
+
+  return s + sum(s - 1);
 }
-console.log(sum(3))
+console.log(sum(3));
 
 //sum of all elements in an Array using Recursion
 
-let arr1 = [1,2,3,4,5]
+let arr1 = [1, 2, 3, 4, 5];
 
 // Sum of all elements in An Array
-function sumArr(n){
-    if(n==0) return arr1[0]
+function sumArr(n) {
+  if (n == 0) return arr1[0];
 
-    return arr1[n]+sumArr(n-1)
+  return arr1[n] + sumArr(n - 1);
 }
-console.log(sumArr(arr1.length-1))
-
+console.log(sumArr(arr1.length - 1));
 
 // Factorial of a Number :
 
-function fact(num){
-    if(num==1){
-        return 1;
-    }
+function fact(num) {
+  if (num == 1) {
+    return 1;
+  }
 
-   return num * fact(num-1)
+  return num * fact(num - 1);
 }
-console.log(fact(5))
+console.log(fact(5));
 
 // FiboNacci Series using Recursion
 
-function fiboNacci(num){
-    if(num<=1) return num;
+function fiboNacci(num) {
+  if (num <= 1) return num;
 
+  let fibo = fiboNacci(num - 1) + fiboNacci(num - 2);
 
-
-    let fibo = fiboNacci(num-1)+fiboNacci(num-2)
-
-    return fibo;
+  return fibo;
 }
-console.log(fiboNacci(5))
+console.log(fiboNacci(5));
+
+var middleNode = function (head) {
+  let slow = head;
+  let fast = head;
+
+  while (fast != null && fast.next != null) {
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+  return slow;
+};
+
+/**
+ * @param {string[]} strs
+ * @return {string}
+ */
+var longestCommonPrefix = function (strs) {
+  let x = 0;
+  while (x < strs[0].length) {
+    let ch = strs[0][x];
+    for (let i = 1; i < strs.length; i++) {
+      if (ch != strs[i][x] || x == strs[i].length) {
+        return strs[0].substring(0, x);
+      }
+    }
+    ++x;
+  }
+  return strs[0];
+};
